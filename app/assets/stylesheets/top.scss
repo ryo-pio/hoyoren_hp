@@ -1,0 +1,147 @@
+.main-header {
+  height: 120px;
+  width: 100%;
+  background-color: #333128;
+  opacity: 0.97;
+  position: fixed;
+  &__logo {
+    float: left;
+    color: white;
+    font-family: Hiragino Mincho Pro;
+    padding-top:20px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    .logo-hosei {
+      font-size: 21px;
+    }
+    .logo-hoyoren {
+      padding-top: 15px;
+      padding-left: 250px;
+      padding-bottom: 5px;
+      font-size:50px;
+    }
+  }
+  &__otori img {
+    float: left;
+    top: 0;
+    padding-left: 10px;
+    height: 133px;
+    width: 133px;
+  }
+  &__list {
+    position: relative;
+    float: right;
+    color: white;
+    padding-top: 90px;
+    padding-right: 40px;
+    &--font {
+      float: left;
+      font-size: 18px;
+      padding-left: 40px;
+      color: white;
+      text-decoration: none;
+      font-family: YuMincho;
+    }
+  }
+}
+.top img {
+  height: calc(100% - 120px);
+  width: 100%;
+}
+.main {
+  height: 900px;
+  width: 100%;
+  background-color: #fffaf0;
+  .main-menu {
+    &__logo {
+      text-align: center;
+      font-size: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-family: fantasy;
+    }
+    .image-box {
+      // 要横幅微調整
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+      &__activity img{
+        float: left;
+        height: 350px;
+        width: calc(100% / 3 - 55px);
+        padding-right: 20px;
+      }
+      &__member img{
+        float: left;
+        height: 350px;
+        width: calc(100% / 3 - 55px);
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      &__performance img{
+        float: left;
+        height: 350px;
+        width: calc(100% / 3 - 55px);
+        padding-left: 20px;
+      }
+    }
+  }
+  .sub-menu {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    clear: both;
+    .schedule-logo {
+      text-align: center;
+      font-size: 20px;
+      font-family: fantasy;
+    }
+    &__twitter {
+      height: 50px;
+      width: 50px;
+      left: 100px;
+      top: 100px;
+      .fa-twitter {
+        font-size: 40px;
+        color: #55acee;
+      }
+    }
+    &__schedule {
+      height: 350px;
+      width: 60%;
+      margin: 0 auto;
+      background-color: #ffffff;
+      overflow: scroll;
+      .schedule-box {
+        clear: both;
+        border-bottom: solid 0.5px #f5f5f5;
+        font-family: YuMincho;
+        &__month {
+          float: left;
+          background-color: #e0ffff;
+          min-height: 50px;
+          width: 70px;
+          text-align: center;
+          line-height: 50px;
+        }
+        &__fes {
+          float: left;
+          line-height: 50px;
+          padding-left: 15px;
+        }
+        &__etc {
+          float: right;
+          line-height: 50px;
+          padding-right: 15px;
+        }
+      }
+    }
+    &__youtube {
+      right: 40px;
+      bottom: 300px;
+      .fa-youtube {
+        font-size: 40px;
+        color: #cd201f;
+      }
+    }
+  }
+}

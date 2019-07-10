@@ -1,0 +1,32 @@
+<%= render 'top/header' %>
+<div class="top">
+  <%= image_tag ('top_img.jpg') %>
+</div>
+<div class="main">
+  <div class="main-menu">
+    <p class="main-menu__logo">▲ M E N U ▼</p>
+    <div class="image-box">
+      <div class="image-box__activity">
+          <%= image_tag ('act.jpg') %>
+      </div>
+      <div class="image-box__member">
+          <%= image_tag ('member.jpg') %>
+      </div>
+      <div class="image-box__performance">
+          <%= image_tag ('performance.jpg') %>
+      </div>
+    </div>
+  </div>
+  <div class="sub-menu">
+    <p class="schedule-logo">△ S C H E D U L E ▽</p>
+    <%# <a href="https://twitter.com/hoyoren"><div class="sub-menu__twitter">
+      <i class="fab fa-twitter"></i>
+      <p class="twitter-logo">twitter</p> %>
+    </div>
+    <%= render 'top/schedule' %>
+    <%# <div class="sub-menu__youtube">
+      <i class="fab fa-youtube"></i>
+      <p class="youtube-logo">youtube</p>
+    </div> %>
+  </div>
+</div>
