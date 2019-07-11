@@ -2,7 +2,7 @@
   height: 90px;
   width: 100%;
   background-color: #333128;
-  opacity: 0.97;
+  opacity: 0.90;
   position: fixed;
   &__logo {
     float: left;
@@ -23,9 +23,9 @@
   }
   &__otori img {
     float: left;
-    padding-left: 10px;
-    height: 105px;
-    width: 105px;
+    padding-left: 20px;
+    height: 90px;
+    width: 90px;
   }
   &__list {
     float: right;
@@ -39,6 +39,7 @@
       color: white;
       text-decoration: none;
       font-family: YuMincho;
+      // color: linear-gradient(to right, #0bd, #0071dd);
     }
   }
 }
@@ -67,6 +68,7 @@
         float: left;
         height: 380px;
         width: 380px;
+        padding-left: 70px;
         padding-right: 20px;
       }
       &__member img{
