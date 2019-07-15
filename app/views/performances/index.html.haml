@@ -1,0 +1,16 @@
+= render 'shared/header'
+.performance
+  .performance-header
+    %p.performance-header__logo ▽ performance introduction ▽
+  .body-main
+    .body-main__photo
+      = image_tag ('soran.jpg')
+    .body-main__f
+      .body-main__f--image
+        ここに廻覆の画像を貼る
+      .body-main__f--comment
+        ここに廻覆の説明文
+  .body-sub
+    = render 'performances/kakoenbu'
+    %p.credit
+      \~ hoyoren ~

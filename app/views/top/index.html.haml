@@ -1,0 +1,6 @@
+%meta{:content => "3; url=home/index", "http-equiv" => "refresh"}/
+.toppage
+  %p.front-image
+    = image_tag ('otori_black_red.png')
+  %p.jump-to-home
+    = link_to "GO TO HOME", { :controller => "home", :action => "index"}, :style=>"color:white;"

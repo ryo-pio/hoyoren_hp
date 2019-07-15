@@ -1,0 +1,12 @@
+.main-header
+  .main-header__logo
+    %p.logo-hosei 法政大学YOSAKOIソーランサークル
+    %p.logo-hoyoren 鳳遙恋
+  .main-header__otori
+    = image_tag ('otori_yellow_red_w.png')
+  .main-header__list
+    = link_to "HOME", { :controller => "home", :action => "index"}, :style=>"color:white;", :class => "main-header__list--font"
+    = link_to "MEMBER", { :controller => "members", :action => "index"}, :style=>"color:white;", :class => "main-header__list--font"
+    = link_to "ACTIVITY", { :controller => "activities", :action => "index"}, :style=>"color:white;", :class => "main-header__list--font"
+    = link_to "PERFORMANCE", { :controller => "performances", :action => "index"}, :style=>"color:white;", :class => "main-header__list--font"
+    = link_to "INFOMATION", { :controller => "infomations", :action => "index"}, :style=>"color:white;", :class => "main-header__list--font"
