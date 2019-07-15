@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'infomations/index'
-  get 'activities/index'
+  root to: 'top#index'
   get 'top/index'
-  get 'performances/index'
   get 'members/index'
+  get 'activities/index'
+  get 'performances/index'
+  get 'infomations/index'
 end
