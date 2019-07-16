@@ -48,9 +48,8 @@
   width: 100%;
 }
 .main {
-  height: 1000px;
+  height: 1050px;
   width: 100%;
-  background-color: #fffaf0;
   .main-menu {
     &__logo {
       text-align: center;
@@ -148,5 +147,18 @@
     padding-top: 50px;
     text-align: center;
     font-family: cursive;
+  }
+  .sns-icon {
+    text-align: center;
+    padding-top: 20px;
+    .fa-twitter {
+      color: black;
+      font-size: 27px;
+    }
+    .fa-youtube {
+      color: black;
+      font-size: 27px;
+      padding-left: 20px;
+    }
   }
 }
