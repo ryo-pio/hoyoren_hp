@@ -1,5 +1,6 @@
-@import './reset.scss';
+@import 'shared/_reset.scss';
+@import 'shared/_header-box.scss';
 @import './top.scss';
 @import './home.scss';
-@import 'top/_performance.scss';
-@import 'shared/_header-box.scss';
+@import './infomations.scss';
+@import './performances.scss';
