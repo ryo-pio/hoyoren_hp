@@ -13,12 +13,18 @@
       %br
       直接メールをお送りされる方は次のアドレスまでご連絡ください。 hoyoren@yahoo.co.jp
     .info-main__left-box--sns
-      %p.twitter__text twitter
-      = link_to "https://twitter.com/hoyoren" do
-        %i.fab.fa-twitter
-      %p.insta__text instagram
-      = link_to "https://www.instagram.com/hoyoren4351/?hl=ja" do
-        %i.fab.fa-instagram
-      %p.youtube__text youtube
-      = link_to "https://www.youtube.com/channel/UCb8TOgT4dd-ZYy69vjt4EZw" do
-        %i.fab.fa-youtube
+      %p.sns-text 公式アカウント
+      .twitter
+        %p.twitter__text twitter
+        = link_to "https://twitter.com/hoyoren" do
+          %i.fab.fa-twitter
+      .insta
+        %p.insta__text instagram
+        %a{:href => "https://www.instagram.com/hoyoren4351/", class: "instagram-logo"}= image_tag ('instagram.png')
+      .youtube
+        %p.youtube__text youtube
+        = link_to "https://www.youtube.com/channel/UCb8TOgT4dd-ZYy69vjt4EZw" do
+          %i.fab.fa-youtube
+      .sub-account
+        %p.sub-account__text 非公式アカウントはこちら...
+  .info-main__right-box ここに入力フォーム 
