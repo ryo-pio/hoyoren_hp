@@ -1,3 +1,38 @@
-// Place all the styles related to the infomations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.info-header {
+  padding-top: 140px;
+  width: 100vw;
+  text-align: center;
+  &__info {
+    font-size: 25px;
+    font-family: '游ゴシック';
+  }
+  &__logo {
+    font-family: '游ゴシック';
+    color: #777777;
+    padding-top: 10px;
+  }
+}
+.info-main {
+  width: 100vw;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+  &__left-box {
+    width: 500px;
+    padding-top: 70px;
+    padding-left: 50px;
+    &--text {
+      letter-spacing: 0.1em;
+      line-height: 40px;
+      color: rgba(0, 0, 0, 0.75);
+    }
+    &--sns {
+      margin-top: 20px;
+      .twitter {
+        &__text {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
