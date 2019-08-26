@@ -1,1 +1,22 @@
 = render 'shared/header'
+.activity
+  .activity__header
+    %p.activity__header--logo ▽ A C T I V I T Y ▽
+    %p.activity__header--sub 活動内容 / 練習風景
+  .activity__main
+    .practice
+      .practice__img
+        = image_tag ('practice.png')
+      .practice__text
+        %p.practice__text--header ~ 正規練 ~
+        %p.practice__text--body
+          毎週火曜日に市ヶ谷キャンパス
+          %br 
+          毎週金曜日に多摩キャンパスで正規練を行なっています。
+    .fes
+      .fes__img
+        = image_tag ('kobe.png')
+      .fes__text
+        %p.fes__text--header ~ お祭り ~
+        %p.fes__text--body
+          鳳遙恋は様々なお祭りに参加させていただいております

@@ -1,3 +1,66 @@
-// Place all the styles related to the activities controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.activity {
+  height: 100vh;
+  width: 100vw;
+  &__header {
+    padding-top: 140px;
+    text-align: center;
+    &--logo {
+      font-size: 25px;
+      font-family: '游ゴシック';
+    }
+    &--sub {
+      font-family: '游ゴシック';
+      color: #777777;
+      padding-top: 10px;
+    }
+  }
+  &__main {
+    padding-top: 60px;
+    padding-left: 40px;
+    .practice {
+      float: left;
+      width: 100vw;
+      &__img img{
+        float:left;
+        width: 45%;
+      }
+      &__text {
+        float: left;
+        width: 35%;
+        padding-left: 30px;
+        &--header {
+          text-align: center;
+        }
+        &--body {
+          text-align: center;
+          line-height: 30px;
+          font-size: 15px;
+          padding-top: 10px;
+        }
+      }
+    }
+    .fes {
+      float: left;
+      width: 100vw;
+      padding-top: 40px;
+      &__img img{
+        float:left;
+        width: 45%;
+      }
+      &__text {
+        float: left;
+        width: 35%;
+        padding-left: 30px;
+        &--header {
+          text-align: center;
+        }
+        &--body {
+          text-align: center;
+          line-height: 30px;
+          font-size: 15px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
