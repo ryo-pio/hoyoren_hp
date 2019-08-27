@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'performances/index'
   get 'infomations/index'
   resources :users
+  resources :members
 end
