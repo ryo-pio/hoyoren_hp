@@ -1,3 +1,22 @@
-// Place all the styles related to the members controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.people-now {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.people-box {
+  clear: both;
+  width: 100%;
+  margin-left: 40px;
+  padding-top: 40px;
+  &__image {
+    float: left;
+  }
+  &__image img {
+    width: 655px;
+    height: 500px;
+  }
+  &__text {
+    float: left;
+    padding-left: 30px;
+  }
+}

@@ -1,3 +1,19 @@
 = render 'shared/header'
-
+.activity
+  .activity__header
+    %p.activity__header--logo ▽ M E M B E R ▽
+    %p.activity__header--sub 〜 メンバー紹介 〜
+  %p.people-now ▼ 現 役 生 ▲
+  .people-box
+    .people-box__image
+      = image_tag ('1st_yosakoier.png')
+    %p.people-box__text we are 1st yosakoier
+  .people-box
+    .people-box__image
+      = image_tag ('2nd_yosakoier.png')
+    %p.people-box__text we are 2nd yosakoier
+  .people-box
+    .people-box__image
+      = image_tag ('3rd_yosakoier.png')
+    %p.people-box__text we are 3rd yosakoier
 -# = render 'members/header-box'
