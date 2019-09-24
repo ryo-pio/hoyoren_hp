@@ -43,6 +43,9 @@
     }
   }
 }
+// .top {
+//   background: url("app/assets/images/top_img.jpg");
+// }
 .top img {
   height: calc(100% - 120px);
   width: 100%;
@@ -108,7 +111,7 @@
       height: 350px;
       width: 60%;
       margin: 0 auto;
-      background-color: #ffffff;
+      background-image: url('flag_schedule_2.png');
       overflow: scroll;
       .schedule-box {
         clear: both;
@@ -116,7 +119,7 @@
         font-family: YuMincho;
         &__month {
           float: left;
-          background-color: #e0ffff;
+          // background-color: gainsboro;
           min-height: 50px;
           width: 70px;
           text-align: center;
