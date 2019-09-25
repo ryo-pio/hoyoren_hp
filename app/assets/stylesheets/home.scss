@@ -4,6 +4,7 @@
   background-color: #333128;
   opacity: 0.90;
   position: fixed;
+  z-index: 9;
   &__logo {
     float: left;
     color: white;
@@ -46,8 +47,8 @@
 // .top {
 //   background: url("app/assets/images/top_img.jpg");
 // }
-.top img {
-  height: calc(100% - 120px);
+.top video {
+  height: auto;
   width: 100%;
 }
 .main {
