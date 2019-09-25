@@ -14,10 +14,4 @@ class MembersController < ApplicationController
   def edit
   end
 
-  def f_member
-  end
-
-  def senko_member
-  end
-
 end
