@@ -6,7 +6,8 @@
   %p.people-now ▼ 現 役 生 ▲
   .people-box
     .people-box__image
-      = image_tag ('1st_yosakoier.png')
+      = link_to  members_f_member_path do
+        = image_tag ('1st_yosakoier.png')
     %p.people-box__text we are 1st yosakoier
   .people-box
     .people-box__image
@@ -14,6 +15,7 @@
     %p.people-box__text we are 2nd yosakoier
   .people-box
     .people-box__image
-      = image_tag ('3rd_yosakoier.png')
+      = link_to members_senko_member_path do
+        = image_tag ('3rd_yosakoier.png')
     %p.people-box__text we are 3rd yosakoier
 -# = render 'members/header-box'
