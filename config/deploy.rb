@@ -42,7 +42,7 @@ set :linked_files, %w{ config/secrets.yml }
 
 # 元々記述されていた after 「'deploy:publishing', 'deploy:restart'」以下を削除して、次のように書き換え
 
-after 'deploy:publishing', 'deploy:restart'
+# after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
     invoke 'unicorn:restart'
@@ -57,8 +57,8 @@ namespace :deploy do
       upload!('config/secrets.yml', "#{shared_path}/config/secrets.yml")
     end
   end
-  # before :starting, 'deploy:upload'
-  # after :finishing, 'deploy:cleanup'
+  before :starting, 'deploy:upload'
+  after :finishing, 'deploy:cleanup'
 end
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
