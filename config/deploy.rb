@@ -53,7 +53,6 @@ namespace :deploy do
   after :finishing, 'deploy:cleanup'
 end
 
-config.public_file_server.enabled = true
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
