@@ -32,7 +32,7 @@ server '3.114.34.45', user: 'ec2-user', roles: %w{app db web}
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-
+config.public_file_server.enabled = true
 
 # Custom SSH Options
 # ==================
