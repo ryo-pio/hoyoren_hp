@@ -1,6 +1,12 @@
 = render 'shared/header'
 .top
-  = video_tag asset_path('/assets/videos/hoyoren-example1.MP4'), autoplay: true, muted: true, loop: true
+  .top__slide
+    = image_tag('top_img.jpg')
+  .top__slide
+    = image_tag('back_chiyo.jpg')
+  .top__slide
+    = image_tag('nigata.jpg')
+  -# = video_tag asset_path('/assets/videos/hoyoren-example1.MP4'), autoplay: true, muted: true, loop: true
 .main
   .main-menu
     %p.main-menu__logo ▲ M E N U ▼
