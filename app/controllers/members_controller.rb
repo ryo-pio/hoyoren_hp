@@ -4,7 +4,7 @@ class MembersController < ApplicationController
 
   def create
     Member.create!(name: member_params[:name], nickname: member_params[:nickname], job: member_params[:job], text: member_params[:text], image: member_params[:image], year: member_params[:year])
-    redirect_to '/members/new', notice: 'データベースに保存されました'
+    redirect_to '/members/new', notice: 'データベースに保存されました', class: '.notice'
   end
   
   def show
@@ -12,6 +12,8 @@ class MembersController < ApplicationController
     @member_chiyokagura = Member.where(year: 2018)
     @member_f = Member.where(year: 2019)
   end
+# showで@member_その学年が入恋した年の演舞 = Member.where(year: その年)
+# 表示順を考慮するカラムが必要かも?
 
   def new
   end
