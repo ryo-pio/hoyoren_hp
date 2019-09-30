@@ -8,6 +8,9 @@ class MembersController < ApplicationController
   end
   
   def show
+    @member_senko = Member.where(year: 2017)
+    @member_chiyokagura = Member.where(year: 2018)
+    @member_f = Member.where(year: 2019)
   end
 
   def new

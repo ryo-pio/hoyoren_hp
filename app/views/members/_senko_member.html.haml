@@ -33,3 +33,7 @@
       %p 練習担当長 /振り制 /HP制作
     .kaisei-main__people--text
       %p 楠にジャーマンスープレックスする男って書いてって頼まれたよ 書いたよ
+  - @member_senko.each do |member|
+    %p= member.name
+    %p= member.nickname
+    %p= member.text
