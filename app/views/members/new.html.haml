@@ -1,8 +1,16 @@
-member新規投稿画面
-.member-create
-  %input{ class: ".member-create__name", placeholder: "よさ名", type: "text"}
-  %input{ class: ".member-create__nickname", placeholder: "普段呼ばれている名前", type: "text"}
-  %input{ class: ".member-create__job", placeholder: "役職", type: "text"}
-  %input{ class: ".member-create__text", placeholder: "テキスト", type: "text"}
-  %input{ class: ".member-create__image", placeholder: "画像をアップロード", type: "text"}
-  %button.member-create__btn 投稿
+- if user_signed_in?
+  .members-create-top
+    %p メンバー追加画面 / 年度は半角でお願いします
+  .member-create
+    = form_tag members_path do
+      %input{ class: ".member-create__name", placeholder: "よさ名", type: "text", name: "name"}
+      %input{ class: ".member-create__nickname", placeholder: "普段呼ばれている名前", type: "text", name: "nickname"}
+      %input{ class: ".member-create__job", placeholder: "役職", type: "text", name: "job"}
+      %input{ class: ".member-create__text", placeholder: "テキスト", type: "text", name: "text"}
+      %input{ class: ".member-create__image", placeholder: "画像をアップロード", type: "text", name: "image"}
+      %input{ class: ".member-create__year", placeholder: "何年入恋か？", type: "string", name: "year"}
+      %button.member-create__btn 投稿
+- else
+= link_to new_user_session_path do
+  %p you must log_in !!
+%p (if you've already signed_in, no problem)
