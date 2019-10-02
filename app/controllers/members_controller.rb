@@ -38,7 +38,7 @@ class MembersController < ApplicationController
   def destroy
     @member = Member.find_by(id: params[:id])
     @member.destroy
-    redirect_to root_path
+    redirect_to members_path
   end
   # member.idを作る必要あり？
   # groupで分けたほうがいいかも、００代とか
