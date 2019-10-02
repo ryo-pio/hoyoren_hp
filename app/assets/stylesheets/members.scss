@@ -20,3 +20,37 @@
     padding-left: 30px;
   }
 }
+.go-to-new {
+  position: fixed;
+  height: 40px;
+  width: 200px;
+  background-color: gray;
+  color: white;
+  bottom: 40px;
+  right: 0;
+  line-height: 40px;
+  text-align: center;
+}
+.go-to-logout {
+  position: fixed;
+  height: 40px;
+  width: 200px;
+  background-color: red;
+  color: white;
+  bottom: 0;
+  right: 0;
+  line-height: 40px;
+  text-align: center;
+}
+
+.member-box {
+  float: left;
+  width: 33%;
+  height: 500px;
+  margin-top: 40px;
+  &__image {
+    height: 400px;
+    width: 300px;
+    border: solid 1px black;
+  }
+}
