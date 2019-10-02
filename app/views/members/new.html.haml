@@ -4,7 +4,6 @@
   .member-create
     = form_for @member do |f|
       = f.text_field :name, placeholder: "よさ名", name: "name"
-      = f.text_field :nickname, placeholder: "普段呼ばれている名前", name: "nickname"
       = f.text_field :job, placeholder: "役職", name: "job"
       = f.text_field :text, placeholder: "テキスト", name: "text", name: "text"
       = f.text_field :year, placeholder: "何年入恋か？", name: "year", name: "year", type: "string"

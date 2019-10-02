@@ -1,10 +1,9 @@
 member編集画面
 .member-box
   .member-box__image
+    = image_tag @member.image.url
   .member-box__name
     %p= @member.name
-  .member-box__nickname
-    %p= @member.nickname
   .member-box__text
     %p= @member.text
   .member-box__job

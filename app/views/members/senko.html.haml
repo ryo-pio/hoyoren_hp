@@ -39,12 +39,10 @@
         = image_tag member.image.url
       .member-box__name
         %p= member.name
-      .member-box__nickname
-        %p= member.nickname
       .member-box__text
         %p= member.text
       .member-box__job
         %p= member.job
-    - if user_signed_in?
-      = link_to edit_member_path(member.id) do
-        %p 編集する
+      - if user_signed_in?
+        = link_to edit_member_path(member.id) do
+          %p 編集する
