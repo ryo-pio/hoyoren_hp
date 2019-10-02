@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'top#index'
+  get 'members/senko'
+  get 'members/chiyokagura'
+  get 'members/f'
+  resources :users
+  resources :members
   get 'home/index'
-  # get 'members/index'
   get 'activities/index'
   get 'performances/index'
   get 'infomations/index'
-  resources :users
-  resources :members, only: [:index, :create, :show, :edit, :new]
 end

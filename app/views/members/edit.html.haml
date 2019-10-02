@@ -1,1 +1,14 @@
 member編集画面
+.member-box
+  .member-box__image
+  .member-box__name
+    %p= @member.name
+  .member-box__nickname
+    %p= @member.nickname
+  .member-box__text
+    %p= @member.text
+  .member-box__job
+    %p= @member.job
+.delete-btn
+= link_to member_path(@member.id), method: :delete do
+  %p 削除する
