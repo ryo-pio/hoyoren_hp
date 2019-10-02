@@ -1,5 +1,6 @@
 class MembersController < ApplicationController
   # before_action :set_member, only: [:destroy, :show]
+  before_action :authenticate_user!, only: [:show, :edit, :destroy, :edit, :update, :new]
 
   def index
   end
@@ -9,12 +10,11 @@ class MembersController < ApplicationController
     # @member = Member.new(name: member_params[:name], nickname: member_params[:nickname], job: member_params[:job], text: member_params[:text], image: member_params[:image], year: member_params[:year])
     @member = Member.new(member_params)
     @member.save!
-    redirect_to root_path, notice: 'データベースに保存されました', class: '.notice'
+    redirect_to members_path, notice: 'データベースに保存されました'
   end
   
-  def show
-    @member = Member.find(params[:id])
-  end
+  # def show
+  # end
 # showで@member_その学年が入恋した年の演舞 = Member.where(year: その年)
 # 表示順を考慮するカラムが必要かも?
 # 本番環境同様のbasic認証で二段階認証?
@@ -38,7 +38,7 @@ class MembersController < ApplicationController
   def destroy
     @member = Member.find_by(id: params[:id])
     @member.destroy
-    redirect_to members_path
+    redirect_to members_path, notice: '削除しました'
   end
   # member.idを作る必要あり？
   # groupで分けたほうがいいかも、００代とか
@@ -49,14 +49,14 @@ class MembersController < ApplicationController
 
   def update
     @member = Member.find_by(params[:id])
-    @member.update(name: member_params[:name], nickname: member_params[:nickname], job: member_params[:job], text: member_params[:text], image: member_params[:image], year: member_params[:year])
+    @member.update(name: member_params[:name], job: member_params[:job], text: member_params[:text], image: member_params[:image], year: member_params[:year])
     redirect_to root_path
   end
 
 private
 
   def member_params
-    params.permit(:name, :nickname, :job, :text, :image, :year, :memberid)
+    params.permit(:name, :job, :text, :image, :year, :memberid)
   end
 
   def set_member
