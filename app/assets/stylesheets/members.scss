@@ -48,9 +48,8 @@
   width: 33%;
   height: 500px;
   margin-top: 40px;
-  &__image {
-    height: 400px;
-    width: 300px;
-    border: solid 1px black;
+  &__image img{
+    // height: 400px;
+    // width: 300px;
   }
 }
