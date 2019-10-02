@@ -6,6 +6,7 @@ class CreateMembers < ActiveRecord::Migration[5.2]
       t.string :job
       t.text :text
       t.string :image
+      t.string :year
 
       t.timestamps
     end

@@ -6,17 +6,19 @@
   %p.people-now ▼ 現 役 生 ▲
   .people-box
     .people-box__image
-      = link_to  member_path(1) do
+      = link_to  members_f_path do
         = image_tag ('1st_yosakoier.png')
     %p.people-box__text we are 1st yosakoier
   .people-box
     .people-box__image
-      = link_to  member_path(2) do
+      = link_to  members_chiyokagura_path do
         = image_tag ('2nd_yosakoier.png')
     %p.people-box__text we are 2nd yosakoier
   .people-box
     .people-box__image
-      = link_to member_path(3) do
+      = link_to members_senko_path do
         = image_tag ('3rd_yosakoier.png')
     %p.people-box__text we are 3rd yosakoier
--# = render 'members/header-box'
+- if user_signed_in?
+  %a{href: '/members/new', class: 'go-to-new'}メンバー投稿ページへ
+  = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'go-to-logout'

@@ -32,4 +32,18 @@
     .kaisei-main__people--job
       %p 練習担当長 /振り制 /HP制作
     .kaisei-main__people--text
-      %p 楠にジャーマンスープレックスする男って書いてって頼まれたよ 書いたよ
+      %p 楠にジャーマンスープレックスする男って書いてって頼まれたよ 書いたよ  
+  - @member_f.each do |member|
+    .member-box
+      .member-box__image
+      .member-box__name
+        %p= member.name
+      .member-box__nickname
+        %p= member.nickname
+      .member-box__text
+        %p= member.text
+      .member-box__job
+        %p= member.job
+    - if user_signed_in?
+      = link_to edit_member_path(member.id) do
+        %p 編集する
