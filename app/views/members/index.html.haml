@@ -8,17 +8,24 @@
     .people-box__image
       = link_to  members_f_path do
         = image_tag ('1st_yosakoier.png')
-    %p.people-box__text we are 1st yosakoier
+    %p.people-box__text 
+    %br 2019『廻覆～ヱフ～』でデビューしました。
+    %br 令和にふさわしい元気もりもりごはんぱわーな代です
   .people-box
     .people-box__image
       = link_to  members_chiyokagura_path do
         = image_tag ('2nd_yosakoier.png')
-    %p.people-box__text we are 2nd yosakoier
+    %p.people-box__text 
+    %br 2018『千妖神樂』でデビューしました。
+    %br 明るくて仲良しな代です。
   .people-box
     .people-box__image
       = link_to members_senko_path do
         = image_tag ('3rd_yosakoier.png')
-    %p.people-box__text we are 3rd yosakoier
+    %p.people-box__text 
+    %br 2017年『閃煌』でデビューしました。
+    %br 2019『廻覆～ヱフ～』を中心になって制作しお披露目しました！
+    %br 全力で一生懸命な代です！
 - if user_signed_in?
   %a{href: '/members/new', class: 'go-to-new'}メンバー投稿ページへ
   = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'go-to-logout'
