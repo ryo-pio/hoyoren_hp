@@ -1,13 +1,16 @@
 member編集画面
-.member-box
-  .member-box__image
-    = image_tag @member.image.url
-  .member-box__name
-    %p= @member.name
-  .member-box__text
-    %p= @member.text
-  .member-box__job
-    %p= @member.job
+= form_for member_path(@member.id) do
+  .member-box
+    .member-box__image
+      = image_tag @member.image.url
+    %textarea.member-box__name
+      = @member.name
+    %textarea.member-box__text
+      = @member.text
+    %textarea.member-box__job
+      = @member.job
+    %button.btn.btn-primary{:type => "submit"} 保存
+
 .delete-btn
 = link_to member_path(@member.id), method: :delete do
   %p 削除する
