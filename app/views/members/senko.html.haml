@@ -18,3 +18,6 @@
         - if user_signed_in?
           = link_to edit_member_path(member.id) do
             %p.edit-btn 編集する
+- if user_signed_in?
+  %a{href: '/members/new', class: 'go-to-new'}メンバー投稿ページへ
+  = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'go-to-logout'
