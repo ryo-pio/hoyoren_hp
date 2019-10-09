@@ -43,13 +43,68 @@
   text-align: center;
 }
 
-.member-box {
+// 編集ページ
+.member-edit__top {
+  width: 100%;
+  height: 40px;
+  background-color: #55c500;
+  p {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+  }
+}
+
+.member-before-image {
   float: left;
-  width: 33%;
-  height: 500px;
-  margin-top: 40px;
-  &__image img{
-    // height: 400px;
-    // width: 300px;
+  img {
+  margin: 20px;
+  }
+}
+.member-edit {
+  float: left;
+  .member-box {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    &__image {
+    }
+    &__name {
+      width: 500px;
+      height: 20px;
+      display: block;
+      margin-top: 20px;
+    }
+    &__job {
+      width: 500px;
+      height: 20px;
+      display: block;
+      margin-top: 5px;
+    }
+    &__text {
+      width: 500px;
+      height: 20px;
+      display: block;
+      margin-top: 5px;
+    }
+    &__year {
+      width: 500px;
+      height: 20px;
+      display: block;
+      margin-top: 5px;
+    }
+    &__memberid {
+      width: 500px;
+      height: 20px;
+      display: block;
+      margin-top: 5px;
+    }
+    .member-edit-btn {
+      width: 100px;
+      height: 50px;
+      background-color: #99ffee;
+      margin-top: 5px;
+      font-size: 14px;
+    }
   }
 }

@@ -50,7 +50,7 @@ class MembersController < ApplicationController
   def update
     @member = Member.find_by(params[:id])
     @member.update(name: member_params[:name], job: member_params[:job], text: member_params[:text], image: member_params[:image], year: member_params[:year])
-    redirect_to root_path
+    redirect_to members_path, notice: '編集されました'
   end
 
 private
