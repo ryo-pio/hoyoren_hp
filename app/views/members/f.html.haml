@@ -14,10 +14,7 @@
         .member-box__text
           %p= member.text
         .member-box__job
-          - if empty?
-            %p= member.job
-            - else 
-              %p
+          %p= member.job
         - if user_signed_in?
           = link_to edit_member_path(member.id) do
             %p.edit-btn 編集する
