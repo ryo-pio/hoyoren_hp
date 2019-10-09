@@ -15,6 +15,11 @@
       = f.text_field :year, placeholder: "#{@member.year}", name: "year", name: "year", type: "string", class: "member-edit__box--year"
       = f.text_field :memberid, placeholder: "#{@member.memberid}", name: "memberid", type: "string", class: "member-edit__box--memberid"
       = f.submit '編集', class: "member-edit-btn"
+      %p.attention-head 注意事項!!!
+      %p.attention ・編集時に画像ファイルを選択しないとエラーが出ます(後日修正予定)
+      %p.attention ・最後の数字は並び変える時に使ってください
+      %p.attention ・enterキーを連打しすぎると勝手に投稿されます。
+
 
 = link_to member_path(@member.id), class: "delete-btn", method: :delete do
   %p 削除する
