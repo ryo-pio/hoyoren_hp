@@ -36,6 +36,7 @@
   - @member_f.each do |member|
     .member-box
       .member-box__image
+        = image_tag member.image.url
       .member-box__name
         %p= member.name
       .member-box__nickname

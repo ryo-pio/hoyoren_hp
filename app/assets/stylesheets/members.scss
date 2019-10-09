@@ -43,6 +43,22 @@
   text-align: center;
 }
 
+// 学年ページ
+.member-box {
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  &__image img {
+  }
+  &__name {
+  }
+  &__text {
+    width: 300px;
+  }
+  &__job {
+  }
+}
+
 // 編集ページ
 .member-edit__top {
   width: 100%;
