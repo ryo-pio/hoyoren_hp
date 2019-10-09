@@ -6,19 +6,19 @@
 
 .member-edit
   = form_for @member do |f|
-    .member-box
+    .member-edit__box
       %p 変更する画像を選択
-      = f.file_field :image, name: "image", class: "member-box__image"
+      = f.file_field :image, name: "image", class: "member-edit__box--image"
       -# %p よさ名
-      = f.text_field :name, placeholder: "#{@member.name}", name: "name", class: "member-box__name"
+      = f.text_field :name, placeholder: "#{@member.name}", name: "name", class: "member-edit__box--name"
       -# %p 役職
-      = f.text_field :job, placeholder: "#{@member.job}", name: "job", class: "member-box__job"
+      = f.text_field :job, placeholder: "#{@member.job}", name: "job", class: "member-edit__box--job"
       -# %p テキスト
-      = f.text_field :text, placeholder: "#{@member.text}", name: "text", name: "text", class: "member-box__text"
+      = f.text_field :text, placeholder: "#{@member.text}", name: "text", name: "text", class: "member-edit__box--text"
       -# %p 入恋年
-      = f.text_field :year, placeholder: "#{@member.year}", name: "year", name: "year", type: "string", class: "member-box__year"
+      = f.text_field :year, placeholder: "#{@member.year}", name: "year", name: "year", type: "string", class: "member-edit__box--year"
       -# %p メンバーid(並び替えなどに使ってください)
-      = f.text_field :memberid, placeholder: "#{@member.memberid}", name: "memberid", type: "string", class: "member-box__memberid"
+      = f.text_field :memberid, placeholder: "#{@member.memberid}", name: "memberid", type: "string", class: "member-edit__box--memberid"
       = f.submit '編集', class: "member-edit-btn"
 
 = link_to member_path(@member.id), class: "delete-btn", method: :delete do

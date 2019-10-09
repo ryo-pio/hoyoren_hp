@@ -63,37 +63,37 @@
 }
 .member-edit {
   float: left;
-  .member-box {
+  &__box {
     float: left;
     margin-left: 20px;
     margin-top: 20px;
-    &__image {
+    &--image {
     }
-    &__name {
+    &--name {
       width: 500px;
       height: 20px;
       display: block;
       margin-top: 20px;
     }
-    &__job {
+    &--job {
       width: 500px;
       height: 20px;
       display: block;
       margin-top: 5px;
     }
-    &__text {
+    &--text {
       width: 500px;
       height: 20px;
       display: block;
       margin-top: 5px;
     }
-    &__year {
+    &--year {
       width: 500px;
       height: 20px;
       display: block;
       margin-top: 5px;
     }
-    &__memberid {
+    &--memberid {
       width: 500px;
       height: 20px;
       display: block;
