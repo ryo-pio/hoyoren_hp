@@ -1,174 +1,199 @@
-.main-header {
-  height: 90px;
+html {
   width: 100%;
-  background-color: #333128;
-  opacity: 0.90;
-  position: fixed;
-  z-index: 9;
-  &__logo {
-    float: left;
-    color: white;
-    font-family: Hiragino Mincho Pro;
-    padding-top:10px;
-    padding-left: 40px;
-    padding-bottom: 15px;
-    .logo-hosei {
-      font-size: 20px;
-    }
-    .logo-hoyoren {
-      padding-top: 10px;
-      padding-left: 250px;
-      padding-bottom: 5px;
-      font-size:45px;
-    }
-  }
-  &__otori img {
-    float: left;
-    padding-left: 20px;
+  margin: 0;
+  padding: 0;
+  .main-header {
     height: 90px;
-    width: 90px;
-  }
-  &__list {
-    float: right;
-    color: white;
-    padding-top: 60px;
-    padding-right: 40px;
-    &--font {
+    width: 100%;
+    background-color: #333128;
+    opacity: 0.90;
+    position: fixed;
+    z-index: 9;
+    &__logo {
       float: left;
-      font-size: 18px;
-      margin-left: 40px;
       color: white;
-      text-decoration: none;
-      font-family: YuMincho;
-      // color: linear-gradient(to right, #0bd, #0071dd);
+      font-family: Hiragino Mincho Pro;
+      padding-top:10px;
+      padding-left: 40px;
+      padding-bottom: 15px;
+      .logo-hosei {
+        font-size: 20px;
+      }
+      .logo-hoyoren {
+        padding-top: 10px;
+        padding-left: 250px;
+        padding-bottom: 5px;
+        font-size:45px;
+      }
+    }
+    &__otori img {
+      float: left;
+      padding-left: 20px;
+      height: 90px;
+      width: 90px;
+    }
+    &__list {
+      float: right;
+      color: white;
+      padding-top: 60px;
+      padding-right: 40px;
+      &--font {
+        float: left;
+        font-size: 18px;
+        margin-left: 40px;
+        color: white;
+        text-decoration: none;
+        font-family: YuMincho;
+        // color: linear-gradient(to right, #0bd, #0071dd);
+      }
     }
   }
-}
-.top {
-  // padding-top: 100px;
-  &__slide img{
-    width: 100%;
-    height: 750px;
+  .top {
+    // padding-top: 100px;
+    &__slide {
+      width: 100%;
+      margin: 0 auto;
+      img {
+      width: 100%;
+      height: 750px;
+      }
+    }
   }
-}
-// .top video {
-//   height: auto;
-//   width: 100%;
-// }
-.main {
-  height: 1050px;
-  width: 100%;
-  .main-menu {
-    &__logo {
-      text-align: center;
-      font-size: 20px;
+  // .top video {
+  //   height: auto;
+  //   width: 100%;
+  // }
+  .main {
+    height: 1050px;
+    width: 100%;
+      // padding: 0 40px;
+    .main-menu {
+      &__logo {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-family: fantasy;
+      }
+      .image-box {
+        // 要横幅微調整
+        width: 100%;
+        height: 380px;
+        margin: 0 auto;
+        &__activity {
+          float: left;
+          width: 33%;
+          img {
+          height: 75%;
+          width: 75%;
+          display: block;
+          margin: 0 auto;
+          // padding-left: 70px;
+          // padding-right: 20px;
+          }
+        }
+        &__member {
+          float: left;
+          width: 33%;
+          img {
+          height: 75%;
+          width: 75%;
+          display: block;
+          margin: 0 auto;
+          // padding-left: 20px;
+          // padding-right: 20px;
+          }
+        }
+        &__performance {
+          float: left;
+          width: 33%;
+          img {
+          height: 75%;
+          width: 75%;
+          display: block;
+          margin: 0 auto;
+          // padding-left: 20px;
+          }
+        }
+      }
+    }
+    .sub-menu {
       padding-top: 40px;
       padding-bottom: 30px;
-      font-family: fantasy;
+      clear: both;
+      .schedule-logo {
+        text-align: center;
+        font-size: 20px;
+        font-family: fantasy;
+      }
+      &__twitter {
+        height: 50px;
+        width: 50px;
+        left: 100px;
+        top: 100px;
+        .fa-twitter {
+          font-size: 40px;
+          color: #55acee;
+        }
+      }
+      &__schedule {
+        height: 350px;
+        width: 60%;
+        margin: 0 auto;
+        // background-image: url('flag_schedule_2.png');
+        overflow: scroll;
+        .schedule-box {
+          clear: both;
+          border-bottom: solid 1px #f5f5f5;
+          font-family: YuMincho;
+          &__month {
+            float: left;
+            // background-color: gainsboro;
+            min-height: 50px;
+            width: 70px;
+            text-align: center;
+            line-height: 50px;
+          }
+          &__fes {
+            float: left;
+            line-height: 50px;
+            padding-left: 15px;
+          }
+          &__etc {
+            float: right;
+            line-height: 50px;
+            padding-right: 15px;
+          }
+        }
+      }
+      &__youtube {
+        right: 40px;
+        bottom: 300px;
+        .fa-youtube {
+          font-size: 40px;
+          color: #cd201f;
+        }
+      }
     }
-    .image-box {
-      // 要横幅微調整
-      width: 100%;
-      height: 380px;
-      // padding-left: 95px;
-      &__activity img{
-        float: left;
-        height: 380px;
-        width: 380px;
-        padding-left: 70px;
-        padding-right: 20px;
-      }
-      &__member img{
-        float: left;
-        height: 380px;
-        width: 380px;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      &__performance img{
-        float: left;
-        height: 380px;
-        width: 380px;
-        padding-left: 20px;
-      }
-    }
-  }
-  .sub-menu {
-    padding-top: 40px;
-    padding-bottom: 30px;
-    clear: both;
-    .schedule-logo {
+    .credit {
+      padding-top: 50px;
       text-align: center;
-      font-size: 20px;
-      font-family: fantasy;
+      font-family: cursive;
     }
-    &__twitter {
-      height: 50px;
-      width: 50px;
-      left: 100px;
-      top: 100px;
+    .sns-icon {
+      text-align: center;
+      padding-top: 20px;
       .fa-twitter {
-        font-size: 40px;
-        color: #55acee;
+        color: black;
+        font-size: 27px;
       }
-    }
-    &__schedule {
-      height: 350px;
-      width: 60%;
-      margin: 0 auto;
-      // background-image: url('flag_schedule_2.png');
-      overflow: scroll;
-      .schedule-box {
-        clear: both;
-        border-bottom: solid 1px #f5f5f5;
-        font-family: YuMincho;
-        &__month {
-          float: left;
-          // background-color: gainsboro;
-          min-height: 50px;
-          width: 70px;
-          text-align: center;
-          line-height: 50px;
-        }
-        &__fes {
-          float: left;
-          line-height: 50px;
-          padding-left: 15px;
-        }
-        &__etc {
-          float: right;
-          line-height: 50px;
-          padding-right: 15px;
-        }
-      }
-    }
-    &__youtube {
-      right: 40px;
-      bottom: 300px;
       .fa-youtube {
-        font-size: 40px;
-        color: #cd201f;
+        color: black;
+        font-size: 27px;
+        padding-left: 20px;
       }
-    }
-  }
-  .credit {
-    padding-top: 50px;
-    text-align: center;
-    font-family: cursive;
-  }
-  .sns-icon {
-    text-align: center;
-    padding-top: 20px;
-    .fa-twitter {
-      color: black;
-      font-size: 27px;
-    }
-    .fa-youtube {
-      color: black;
-      font-size: 27px;
-      padding-left: 20px;
     }
   }
 }
 
-// width: 1273px;の時表示変更できるような記述にする
+  // width: 1273px;の時表示変更できるような記述にする
