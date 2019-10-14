@@ -3,29 +3,28 @@
   .info-header
     %p.info-header__info ~ I N F O M A T I O N ~
     %p.info-header__logo お問い合わせ / 公式アカウント
-  .info-main
-    .info-main__left-box 
-      %p.info-main__left-box--text
-        鳳遙恋に興味を持っていただきありがとうございます。
-        %br
-        お問い合わせは本ページフォームもしくは下記メールアドレスよりお願いいたします。
-        %br
-        なお、内容によっては、ご連絡までお時間がかかるものがございます。あらかじめご了承ください。
-        %br
-        直接メールをお送りされる方は次のアドレスまでご連絡ください。 hoyoren@yahoo.co.jp
-      .info-main__left-box--sns
-        %p.sns-text 公式アカウント
-        .twitter
-          %p.twitter__text twitter
-          = link_to "https://twitter.com/hoyoren" do
-            %i.fab.fa-twitter
-        .insta
-          %p.insta__text instagram
-          %a{:href => "https://www.instagram.com/hoyoren4351/", class: "instagram-logo"}= image_tag ('instagram.png')
-        .youtube
-          %p.youtube__text youtube
-          = link_to "https://www.youtube.com/channel/UCb8TOgT4dd-ZYy69vjt4EZw" do
-            %i.fab.fa-youtube
-        -# .sub-account
-        -#   %p.sub-account__text 非公式アカウントはこちら...
-    .info-main__right-box ここに入力フォーム 
+  .info
+    .info-main
+      .twitter-now
+        %a.twitter-timeline{"data-height" => "700", :href => "https://twitter.com/hoyoren?ref_src=twsrc%5Etfw"} Tweets by hoyoren
+        %script{:async => "", :charset => "utf-8", :src => "https://platform.twitter.com/widgets.js"}
+      .info-main__text
+        %p 鳳遙恋のホームページをご覧いただきありがとうございます。
+        %p 下記の問い合わせフォームからお願いします。
+        -# = image_tag ('omotesando_flag.jpg')
+        .info-main__text--form
+
+
+-# .info-main__left-box--sns
+-#   %p.sns-text 公式アカウント
+-#   .twitter
+-#     %p.twitter__text twitter
+-#     = link_to "https://twitter.com/hoyoren" do
+-#       %i.fab.fa-twitter
+-#   .insta
+-#     %p.insta__text instagram
+-#     %a{:href => "https://www.instagram.com/hoyoren4351/", class: "instagram-logo"}= image_tag ('instagram.png')
+-#   .youtube
+-#     %p.youtube__text youtube
+-#     = link_to "https://www.youtube.com/channel/UCb8TOgT4dd-ZYy69vjt4EZw" do
+-#       %i.fab.fa-youtube
