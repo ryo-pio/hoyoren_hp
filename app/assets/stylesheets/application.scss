@@ -6,3 +6,25 @@
 @import './activities.scss';
 @import './infomations.scss';
 @import './performances.scss';
+
+footer {
+  margin-top: 40px;
+  .credit {
+    padding-top: 50px;
+    text-align: center;
+    font-family: cursive;
+  }
+  .sns-icon {
+    text-align: center;
+    padding-top: 20px;
+    .fa-twitter {
+      color: black;
+      font-size: 27px;
+    }
+    .fa-youtube {
+      color: black;
+      font-size: 27px;
+      padding-left: 20px;
+    }
+  }
+}
