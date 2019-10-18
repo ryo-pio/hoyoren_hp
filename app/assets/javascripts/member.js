@@ -4,7 +4,7 @@ $(window).scroll(function(){
      topWindow = $(window).scrollTop();
  $('.baka-logo').each(function(){
   var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 100){
+  if(topWindow > targetPosition - windowHeight){
    $(this).addClass("fadeInDown");
   }
  });
