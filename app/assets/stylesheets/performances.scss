@@ -68,11 +68,21 @@
     }
     &__text {
       width: 70%;
-      font-size: 16px;
       text-align: center;
       line-height: 40px;
       display: block;
       margin: 0 auto;
+      h2 {
+        font-size: 30px;
+        font-family: serif;
+        margin-top: 10px;
+      }
+      &--text {
+        margin-top: 10px;
+      p {
+        font-size: 16px;
+      }
+    }
       a {
         float: right;
         text-decoration: none;
