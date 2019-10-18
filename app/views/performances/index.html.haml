@@ -1,7 +1,7 @@
 = render 'shared/header'
 .performance
   .performance-header
-    %p.performance-header__logo ▽ performance introduction ▽
+    %p.performance-header__logo ▽ 演 舞 紹 介 ▽
   .body-main
     .body-main__photo
       = image_tag ('f_saikasai.jpg')
@@ -9,6 +9,21 @@
       .body-main__f--image
         = image_tag ('f_index.jpg')
       .body-main__f--comment
-        ここに廻覆の説明文
+        %h1 2019年度演舞 廻覆〜ヱフ〜
+        .body-main__f--comment--detail
+          %p 新たな時代に胸を弾ませ、誰もが街に酔いしれる
+          %p しかし広場に集まる人混み、夜明けと共に見つかる亡き人
+          %p< 
+            = "背中には人狼の" 
+            %em<> 爪痕...
+  .main-f
+    %h1 ▽ 今 年 度 演 舞 紹 介 ▽
+    %a{href: "#"}
+      = image_tag ('main_f.jpg')
+    .main-f__text
+      %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consequatur velit, accusantium pariatur error provident exercitationem quibusdam unde beatae tempora aut magnam ipsam obcaecati cum iste inventore dignissimos! Animi, ex.
+      %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, accusamus quidem reprehenderit sed dolorum tenetur magni eum assumenda illum rem ea laborum, at temporibus debitis! Molestiae fuga culpa nihil molestias!
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto autem itaque quas et blanditiis. Alias culpa quae, excepturi eveniet sunt optio obcaecati maxime accusamus beatae, id molestiae inventore iusto!
+      %a{href: "https://youtu.be/A95omfXSvKs"}〈youtube 演舞テーマ発表動画〉
   .body-sub
     = render 'performances/kakoenbu'
