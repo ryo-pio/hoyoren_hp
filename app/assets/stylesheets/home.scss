@@ -52,8 +52,8 @@ html {
     width: 100%;
     height: 100%;
     iframe {
-      width:1450px;
-      height: 800px;
+      width: 100%;
+      height: 808px;
       display: block;
       margin: 0 auto;
     }
@@ -66,13 +66,15 @@ html {
       }
     }
   }
-  // .top video {
-  //   height: auto;
-  //   width: 100%;
-  // }
+  .photo {
+    width: 100%;
+    height: calc(100vh - 90px);
+    border: solid 1px black;
+  }
   .main {
     height: 1050px;
     width: 100%;
+    margin-top: 90px;
       // padding: 0 40px;
     .main-menu {
       &__logo {
@@ -125,7 +127,7 @@ html {
       }
     }
     .sub-menu {
-      padding-top: 40px;
+      padding-top: 90px;
       padding-bottom: 30px;
       clear: both;
       .schedule-logo {

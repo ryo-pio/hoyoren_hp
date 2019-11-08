@@ -34,7 +34,7 @@
       &--comment {
         width: 100%;
         height: 80px;
-        margin-top: 20px;
+        margin-top: 40px;
         line-height: 20px;
         h1 {
           font-size: 18px;
@@ -69,18 +69,33 @@
     &__text {
       width: 70%;
       text-align: center;
-      line-height: 40px;
+      line-height: 45px;
       display: block;
       margin: 0 auto;
+      background-image: url('wolf_nail.jpg');
+      background-size: 35%;
+      background-repeat: no-repeat;
+      background-position: right 205px bottom 200px;
       h2 {
         font-size: 30px;
         font-family: serif;
-        margin-top: 10px;
+        margin-top: 50px;
       }
       &--text {
-        margin-top: 10px;
+        margin-top: 30px;
       p {
         font-size: 16px;
+        .wolf {
+          color: #E43E50;
+        }
+        .lie {
+          font-family: serif;
+          color: #4b0082;
+        }
+      }
+      img {
+        width: 12px;
+        height: 12px;
       }
     }
       a {
@@ -104,8 +119,12 @@
       &__enbu {
         clear: both;
         padding-top: 50px;
-        &--img img {
-          float: left;
+        &--img {
+          img {
+            float: left;
+            width: 450px;
+            height: 300px;
+          }
         }
         &--exp {
           float: left;

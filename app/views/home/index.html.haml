@@ -1,35 +1,22 @@
 = render 'shared/header'
 .top
-  %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",:autoplay => "1", :allowfullscreen => "1", :frameborder => "1", :src => "https://www.youtube.com/embed/tiQKaydfbQY?autoplay=1&controls=0&version=3&loop=1&playlist=tiQKaydfbQY"}
-  -# .top__slide
-  -#   = image_tag('top_img.jpg')
-  -# .top__slide
-  -#   = image_tag('back_chiyo.jpg')
-  -# .top__slide
-  -#   = image_tag('nigata.jpg')
-  -# = video_tag asset_path('/assets/videos/hoyoren-example1.MP4'), autoplay: true, muted: true, loop: true
+  %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "1", :frameborder => "1", :src => "https://www.youtube.com/embed/m5N0ZzcPIcM?autoplay=1&mute=1&controls=0&version=3&loop=1&playlist=tiQKaydfbQY"}
+.photo
+-# 間に合ったら実装
 .main
   .main-menu
-    %p.main-menu__logo ▲ M E N U ▼
+    %p.main-menu__logo ▼ M E N U ▼
     .image-box
       %a{href: "/activities/index"} 
         .image-box__activity
           = image_tag ('f_activity.png')
-      %a{href: "/members/index"} 
+      %a{href: "/members"} 
         .image-box__member
           = image_tag ('f_member.png')
       %a{href: "/performances/index"} 
         .image-box__performance
           = image_tag ('f_performance.png')
   .sub-menu
-    %p.schedule-logo ▽ S C H E D U L E △
+    %p.schedule-logo ▽ S C H E D U L E 2 0 1 9 -  2 0 2 0 ▽
   = render 'home/schedule'
-
-
--# %p.credit &copy; ︎2019 hoyoren. All Rights Reserved.
--# %p.sns-icon
--#   = link_to "https://twitter.com/hoyoren" do
--#     %i.fab.fa-twitter
--#   = link_to "https://www.youtube.com/channel/UCb8TOgT4dd-ZYy69vjt4EZw" do
--#     %i.fab.fa-youtube
       

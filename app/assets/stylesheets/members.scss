@@ -45,7 +45,7 @@
 
 // 学年ページ
 .member {
-  padding: 110px 40px 0px 40px;
+  padding: 110px 0px 0px 0px;
   .kaisei {
     p {
       font-size: 24px;
@@ -60,12 +60,15 @@
     }
   }
   .baka-logo {
+    width: 100%;
     text-align: center;
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-top: 80px;
     h1 {
       font-size: 24px;
       font-family: serif;
-      color: #696969;
+      color: white;
+      // color: #696969;
     }
     h2 {
       font-size: 42px;
@@ -129,7 +132,8 @@
       }
       p.edit-btn {
         text-align: center;
-        margin-top: 10px;
+        display: block;
+        margin: 10px auto 0 auto;
       }
     }
     .member-box:after, .member:before {
