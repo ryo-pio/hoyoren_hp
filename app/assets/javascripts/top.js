@@ -9,3 +9,7 @@
 //   // });
 //   console.log('ok');
 // });
+
+$(function() {
+  $('.top-page').hide().fadeIn(2750);
+});
