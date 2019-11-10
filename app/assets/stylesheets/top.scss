@@ -5,7 +5,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: sans-serif;
   p {
     color: white;
   }
@@ -20,16 +19,19 @@
     &--hosei {
       font-size: 20px;
       margin-top: 45px;
+      font-family: sans-serif;
     }
     &--hoyoren {
       font-size: 36px;
       margin-top: 15px;
+      font-family: sans-serif;
     }
   }
   &__text {
     width: 400px;
     border-top: 2px solid rgba(255, 255, 255,0.8);
     margin: 20px auto 0;
+    font-family: sans-serif;
     p {
       text-align: center;
       padding-top: 20px;
