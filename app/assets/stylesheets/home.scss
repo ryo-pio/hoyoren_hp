@@ -2,7 +2,6 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   .main-header {
     height: 90px;
     width: 100%;
@@ -13,21 +12,18 @@ html {
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     &__logo {
       float: left;
-      color: red;
+      color: white;
       padding-top:10px;
       padding-left: 40px;
       padding-bottom: 15px;
-      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       .logo-hosei {
         font-size: 20px;
-        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       }
       .logo-hoyoren {
         padding-top: 10px;
         padding-left: 250px;
         padding-bottom: 5px;
         font-size:45px;
-        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       }
     }
     &__otori img {
