@@ -33,22 +33,89 @@ html {
       height: 90px;
       width: 90px;
     }
+@media screen and (max-width: 1150px) {
     &__list {
-      float: right;
-      color: white;
-      padding-top: 60px;
-      padding-right: 40px;
-      &--font {
-        float: left;
+      padding-top: 10px;
+      &--home {
         font-size: 18px;
-        margin-left: 40px;
         color: white;
         text-decoration: none;
         font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-        // color: linear-gradient(to right, #0bd, #0071dd);
+        margin-left: 10px;
+        display: block;
+        text-align: right;
+      }
+      &--member {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        margin-left: 10px;
+        display: block;
+        text-align: right;
+      }
+      &--performance {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        margin-left: 10px;
+        display: block;
+        text-align: right;
+      }
+      &--informations {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        margin-left: 10px;
+        display: block;
+        text-align: right;
       }
     }
   }
+@media screen and (min-width: 1151px) {
+  &__list {
+    float: right;
+    color: white;
+    padding-top: 60px;
+    padding-right: 40px;
+    &--home {
+      float: left;
+      font-size: 18px;
+      margin-left: 40px;
+      color: white;
+      text-decoration: none;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      // color: linear-gradient(to right, #0bd, #0071dd);
+    }
+    &--member {
+      float: left;
+      font-size: 18px;
+      margin-left: 40px;
+      color: white;
+      text-decoration: none;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+    &--performance {
+      float: left;
+      font-size: 18px;
+      margin-left: 40px;
+      color: white;
+      text-decoration: none;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+  &--informations {
+    float: left;
+    font-size: 18px;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  }
+  }
+}
+}
   .top {
     width: 100%;
     height: 100%;
